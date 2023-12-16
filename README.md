@@ -76,27 +76,5 @@ Steps to run the scripts/notebooks as is:
       python test_docker.py
       ```
       If the prediction services gives prediction, then it means the docker container is working.
-      
-## Deployment using heroku
-
-   Skip this step and go through to the 2 step.
-   1. Go to use `` heroku cml`` in the repository and type the following commands. The `heroku.yml` in the folder will be used to create a docker image and run the app.
-      ```
-      heroku login
-      git init
-      heroku git:remote -a name_of_the_project
-
-      git add .
-      git commit -m "add bild from heroku.yml"
-      push heroku master
-      ```
-     
-   2. Now the app running at the address http://predict-atm-pressure-5bc65bbe7521.herokuapp.com/predict.
-      To test if the docker container was built properly and running, go to the test_heroku.py 
-      ```
-      python test_heroku.py
-      ```
-      If the prediction services give prediction, the heroku app is working.
-
    
    
