@@ -1,23 +1,22 @@
-# Project:  Air quality data. Environmental and climate monitoring.
-# Atmosfer pressure. Regression model.
+# Project:  Marvin
+#  Audio catecorization. Deep learning 
 ``` 
 Artificial Intelligence  
-Domain             : Regression
-Sub-Domain         : Time series 
-Architectures      : GradientBoostingRegressor
-Application        : Meteological domain
+Domain             : Audio recognition
+Sub-Domain         : Audio categorization
+Architectures      : Secvential
+Application        : Voice recognition for the voice acistance
 ```
+### The purpose is to create audio recognition for small start word for noncommercial voice assistants.
+The word for recognition is Marvin
 
 ### Description of data
-
-Audio generated dataset used for the all talks and the noises vs the world Marvin
+Audio generated dataset used for all talks and the noises vs the world Marvin
 
 ## Metrics of the Final Model
 ```
-Final Model             : model.
-Final DictVectorizer    : dv.bin
-Final MinMaxScaler      : scaler.bin
-Accuracy :                    : Val - 3,  Test - 6 
+Final Model             : marvin_voice.tflite
+Accuracy :                    : Val - 99,  Test - 98
 ``` 
 ## Tools / Libraries
 ```
