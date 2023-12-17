@@ -45,7 +45,7 @@ Steps to run the scripts/notebooks as is:
 
 2. Download data:
 
-   https://drive.google.com/drive/folders/1ZHSiamT-YFU2yFN84wdi2NmDiv0-5ubp?usp=sharing
+   https://drive.google.com/uc?export=download&id=11NAqQ-T2xRd1LHT3hhT7W94F15fn6dvn
 
 ### Using Docker 
  
