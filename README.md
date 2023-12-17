@@ -1,5 +1,5 @@
 # Project:  Marvin
-#  Audio catecorization. Deep learning 
+#  Audio categorization. Deep learning 
 ``` 
 Artificial Intelligence  
 Domain             : Audio recognition
