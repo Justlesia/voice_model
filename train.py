@@ -30,20 +30,14 @@ np.random.seed(seed)
 
 """load precleaned dataset"""
 
-DATASET_PATH = '/Users/lesia/Study/zoom_camp-marvin/wake-word-examples/train'
-
-data_dir = DATASET_PATH #pathlib.Path(DATASET_PATH)
-# if not data_dir.exists():
-#   tf.keras.utils.get_file(
-#       'wake-word-examples.zip',
-#       origin="/content/drive/MyDrive/Colab Notebooks/datasets/wake-word-examples.zip",
-#       extract=True,
-#       cache_dir='.', cache_subdir='data')
+DATASET_PATH = './wake-word-examples/train/'
+data_dir = DATASET_PATH
+# if not load the data https://drive.google.com/uc?export=download&id=11NAqQ-T2xRd1LHT3hhT7W94F15fn6dvn
 
 """The dataset's audio clips are stored in 2 folders corresponding to speech command:"""
 
 def resample_audio(label):
-  directory = './wake-word-examples/train/'+label
+  directory = data_dir+label
   audio_files = [os.path.join(directory, file) for file in os.listdir(directory) if file.endswith('.wav')]
   for file_path in audio_files:
     audio_signal, current_sampling_rate = librosa.load(file_path, sr=None)  # sr=None returns the native sampling rate
