@@ -28,11 +28,11 @@ Virtual Environment     : pipenv
 
 ## Scripts and Notebook:
 ```
-Notebook                : [https://github.com/Justlesia/predict-atm-pressure/blob/main/notebook.ipynb]
-Predict Script          : [https://github.com/Justlesia/predict-atm-pressure/blob/main/predict.py]
-Train Script            : [https://github.com/Justlesia/predict-atm-pressure/blob/main/train.py]
-Test Script             : [https://github.com/Justlesia/predict-atm-pressure/blob/main/test_docker.py]
-Test Script             : [https://github.com/Justlesia/predict-atm-pressure/blob/main/test_heroku.py]
+Notebook                : [martvin_audio_classification.ipynb]
+Predict Script          : [predict.py]
+Train Script            : [train.py]
+Test Script             : [test_manual.py]
+Test Script             : [test.py]
 ```
 
 ## Run the Model as is  
@@ -40,11 +40,12 @@ Steps to run the scripts/notebooks as is:
 
 1. Clone the repo by running the following command:
    ```
-   git clone [https://github.com/Justlesia/predict-atm-pressure.git](https://github.com/Justlesia/predict-atm-pressure.git)
+   git clone https://github.com/Justlesia/voice_model.git
    ```
 
-2. Download data into the ./datasets:
+2. Download data:
 
+   https://drive.google.com/drive/folders/1ZHSiamT-YFU2yFN84wdi2NmDiv0-5ubp?usp=sharing
 
 ### Using Docker 
  
