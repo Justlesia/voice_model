@@ -16,7 +16,7 @@ Audio generated dataset used for all talks and the noises vs the world Marvin
 ## Metrics of the Final Model
 ```
 Final Model             : marvin_voice.tflite
-Accuracy :                    : Val - 99,  Test - 98
+Accuracy :              : Val - 99,  Test - 98
 ``` 
 ## Tools / Libraries
 ```
