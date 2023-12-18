@@ -7,11 +7,10 @@ Sub-Domain         : Audio categorization
 Architectures      : Sequential
 Application        : Voice recognition for the voice assistance
 ```
-### The purpose is to create audio recognition for small start words for noncommercial voice assistants.
-The word for recognition is Marvin
+# The objective is to develop audio recognition for initiating commands with brief trigger words, specifically tailored for non-commercial voice assistants. The designated keyword for recognition is "Marvin."
 
 ### Description of data
-Audio generated dataset used for all talks and the noises vs the world Marvin
+The dataset for training encompasses audio snippets covering various conversational scenarios, including background noise, to enhance the model's ability to recognize "Marvin" amidst real-world conditions.
 
 ## Metrics of the Final Model
 ```
