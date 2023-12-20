@@ -32,6 +32,7 @@ Predict Script          : [predict.py]
 Train Script            : [train.py]
 Test Script             : [test_manual.py]
 Test Script             : [test.py]
+Test Script             : [test_AWS.py]
 ```
 
 ## Run the Model as is  
@@ -64,23 +65,25 @@ Steps to run the scripts/notebooks as is:
    ## Deployment using AWS Lambda
 
    Skip this step and go through to the 2 step.
-   1. Go to use `` heroku cml`` in the repository and type the following commands. The `heroku.yml` in the folder will be used to create a docker image and run the app.
+   1. Go to use `` awscli`` in the repository and type the following commands. The lambda in the folder will be used to create a docker image and run the app.
       ```
-      heroku login
-      git init
-      heroku git:remote -a name_of_the_project
+      aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 362414735980.dkr.ecr.eu-west-1.amazonaws.com
+      docker build -t marvin-predict .
+      docker tag marvin-predict:latest 362414735980.dkr.ecr.eu-west-1.amazonaws.com/marvin-predict:latest
+      docker push 362414735980.dkr.ecr.eu-west-1.amazonaws.com/marvin-predict:latest
+      ```
+   2. Go to use setup and test lambda service:
+      ![photo_2023-12-20 19 15 45](https://github.com/Justlesia/voice_model/assets/61661122/81d95ff4-4f9b-4d3c-b670-544b2fce3441)
+      ![photo_2023-12-20 19 15 35](https://github.com/Justlesia/voice_model/assets/61661122/465174b7-209c-4341-9777-961a60e75007)
+      ![photo_2023-12-20 19 15 27](https://github.com/Justlesia/voice_model/assets/61661122/ab08e9ec-83b8-468f-9958-ed3c56499858)
 
-      git add .
-      git commit -m "add bild from heroku.yml"
-      push heroku master
-      ```
-     
-   2. Now the app running at the address http://predict-atm-pressure-5bc65bbe7521.herokuapp.com/predict.
+   
+   3. Now the app running at the address https://bjh5fym1el.execute-api.eu-west-1.amazonaws.com/test/predict.
       To test if the docker container was built properly and running, go to the test_heroku.py 
       ```
       python test_AWS.py
       ```
-      If the prediction services give prediction, the heroku app is working.
+      If the prediction services give prediction, the service app is working.
 
    
    
