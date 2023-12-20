@@ -79,7 +79,7 @@ Steps to run the scripts/notebooks as is:
 
    
    3. Now the app running at the address https://bjh5fym1el.execute-api.eu-west-1.amazonaws.com/test/predict.
-      To test if the docker container was built properly and running, go to the test_heroku.py 
+      To test if the docker container was built properly and running, go to the test_aws.py 
       ```
       python test_AWS.py
       ```
